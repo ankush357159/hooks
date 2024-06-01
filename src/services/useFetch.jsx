@@ -6,8 +6,7 @@ const useFetch = (url) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const url = process.env.REACT_APP_URL;
+  useEffect(() => {    
     const fetchData = async () => {
       try {
         const response = await axios.get(url);
@@ -19,7 +18,7 @@ const useFetch = (url) => {
       }
     };
     fetchData();
-  }, []);
+  }, [url]);
   return { data, loading, error };
 };
 
