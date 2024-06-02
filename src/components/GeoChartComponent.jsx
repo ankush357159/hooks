@@ -23,7 +23,15 @@ const GeoChartComponent = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
   return (
-    <div style={{ display: "flex", justifyContent: "center", width: "70%", paddingInline: '15%' }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        width: "70%",
+        paddingInline: "15%",
+        marginTop: "5%",
+      }}
+    >
       <NonReactWidget data={getData} chartLabel="Latitude vs Longitude data" />
     </div>
   );

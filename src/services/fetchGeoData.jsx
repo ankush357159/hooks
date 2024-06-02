@@ -6,7 +6,6 @@ const fetchGeoData = () => {
     axios
       .get(url)
       .then((response) => {
-        console.log("Response: ", response)
         const latitudes = response.data.map((res) => parseFloat(res.address.geo.lat));
         const longitudes = response.data.map((res) => parseFloat(res.address.geo.lng));
         resolve({ latitudes, longitudes });

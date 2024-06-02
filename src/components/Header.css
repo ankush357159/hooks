@@ -1,0 +1,42 @@
+nav {
+    background-color: #12002e; 
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  a:hover {
+    background-color: #222961; 
+    color: #000;
+    transform: scale(1.1);
+  }
+  
+  a:active {
+    transform: scale(1);
+  }
+  
+  a:visited {
+    color: #fff;
+  }
+  

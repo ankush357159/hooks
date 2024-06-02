@@ -65,7 +65,6 @@ const NonReactWidget = ({ data, chartLabel }) => {
         },
       },
     });
-    //cleanup code
     return () => {
       if (myChart) {
         myChart.destroy();
