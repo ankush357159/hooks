@@ -9,7 +9,7 @@ const UseFetch = () => {
       <div style={{ display: "flex", justifyContent: "center" }}>
         {data ? (
           <div style={{ width: "70%" }}>
-            <h2 style={{ textAlign: "center" }}>Data from external system</h2>
+            <h2 style={{ textAlign: "center" }}>Data from external system using custom hook</h2>
             <table style={{ width: "100%" }}>
               <thead>
                 <tr>
