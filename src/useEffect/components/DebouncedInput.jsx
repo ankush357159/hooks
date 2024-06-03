@@ -8,9 +8,10 @@ function DebouncedInput() {
     if (inputValue.trim() !== "") {
       const debounceTimer = setTimeout(() => {
         const fetchedSuggestion = fetchRandomSuggestion(inputValue);
+        console.log("Inside setTimeout");
         setSuggestions([fetchedSuggestion]);
       }, 300);
-
+      console.log("Outside setTimeout");
       return () => clearTimeout(debounceTimer);
     } else {
       setSuggestions(null);

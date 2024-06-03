@@ -20,7 +20,7 @@ const EventListenerComponent = () => {
         button.removeEventListener("click", handleClick);
       }
     };
-  }, [handleClick]); // Include handleClick in the dependency array
+  }, [handleClick]); 
 
   return (
     <div
