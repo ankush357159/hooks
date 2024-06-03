@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import fetchGeoData from "../services/fetchGeoData";
+import fetchGeoData from "../../services/fetchGeoData";
 import NonReactWidget from "./NonReactWidget";
 
 const GeoChartComponent = () => {

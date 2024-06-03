@@ -1,4 +1,4 @@
-import useFetch from "../services/useFetch";
+import useFetch from "../../services/useFetch";
 
 const UseFetch = () => {
   const { data, loading, error } = useFetch(process.env.REACT_APP_URL);

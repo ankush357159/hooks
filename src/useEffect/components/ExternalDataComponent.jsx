@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import fetchDataFromExternalSystem from "../services/fetchDataFromExternalSystem";
+import fetchDataFromExternalSystem from "../../services/fetchDataFromExternalSystem";
 import "./ExternalDataComponent.css";
 
 const ExternalDataComponent = () => {
