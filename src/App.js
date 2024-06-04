@@ -13,13 +13,13 @@ import WithUseMemo from "./useMemo/components/WithUseMemo";
 import ColorPicker from "./useState/ColorPicker";
 import ParentWithMemo from "./memo/ParentWithMemo";
 import ParentWithoutMemo from "./memo/ParentWithoutMemo";
+import Users from "./useContext/components/Users";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Header />
-
         <Routes>
           <Route path="/" element={<ExternalDataComponent />} />
           <Route path="/dom-manipulation" element={<DomManipulation />} />
@@ -40,6 +40,7 @@ function App() {
           <Route path="/usestate-colorpicker" element={<ColorPicker />} />
           <Route path="/with-memo" element={<ParentWithMemo />} />
           <Route path="/without-memo" element={<ParentWithoutMemo />} />
+          <Route path="/users" element={<Users />} />
         </Routes>
       </div>
     </BrowserRouter>

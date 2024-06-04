@@ -1,0 +1,32 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.user-card {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.loader {
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+.error {
+    color: red;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
