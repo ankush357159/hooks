@@ -14,6 +14,15 @@ import ColorPicker from "./useState/ColorPicker";
 import ParentWithMemo from "./memo/ParentWithMemo";
 import ParentWithoutMemo from "./memo/ParentWithoutMemo";
 import Users from "./useContext/components/Users";
+import CounterComponent from "./userReducer/components/CounterComponent";
+import TodoComponent from "./userReducer/components/TodoComponent";
+import Tooltip from "./useLayoutEffect/Tooltip";
+import HoverComponent from "./useRef/HoverComponent";
+import TrackPreviousValue from "./useRef/TrackPreviousValue";
+import LayoutComponent from "./useLayoutEffect/LayoutComponent";
+import UseTransitionExample from "./useTransition/UseTransitionExample";
+import WithoutTransition from "./useTransition/WithoutTransition";
+import WithTransition from "./useTransition/WithTransition";
 
 function App() {
   return (
@@ -41,6 +50,21 @@ function App() {
           <Route path="/with-memo" element={<ParentWithMemo />} />
           <Route path="/without-memo" element={<ParentWithoutMemo />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/counter-reducer" element={<CounterComponent />} />
+          <Route path="/todo-reducer" element={<TodoComponent />} />
+          <Route path="/use-layout-effect" element={<Tooltip />} />
+          <Route path="/use-ref" element={<HoverComponent />} />
+          <Route
+            path="/use-ref-track-previous"
+            element={<TrackPreviousValue />}
+          />
+          <Route path="/use-layout-effect" element={<LayoutComponent />} />
+          <Route path="/use-transition" element={<UseTransitionExample />} />
+          <Route
+            path="/without-use-transition"
+            element={<WithoutTransition />}
+          />
+          <Route path="/with-use-transition" element={<WithTransition />} />
         </Routes>
       </div>
     </BrowserRouter>
