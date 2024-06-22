@@ -12,9 +12,9 @@ function TodoList({ todos }) {
       } else if (selectedTab === "Completed") {
         return todo.completed;
       }
-      return false; // Handle invalid tab values (optional)
+      return false; 
     });
-  }, [todos, selectedTab]); // Dependency array
+  }, [todos, selectedTab]); 
 
   const handleTabChange = (event) => {
     setSelectedTab(event.target.value);

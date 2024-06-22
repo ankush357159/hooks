@@ -23,6 +23,10 @@ import LayoutComponent from "./useLayoutEffect/LayoutComponent";
 import UseTransitionExample from "./useTransition/UseTransitionExample";
 import WithoutTransition from "./useTransition/WithoutTransition";
 import WithTransition from "./useTransition/WithTransition";
+import BooksApp from "./useContext/books-context/components/BooksApp";
+import { ParentComponent as ForwareRefComp } from "./react-apis/forwardRef/ParentComponent";
+import LazyComponent from "./react-apis/lazy/LazyComponent";
+import MemoParent from "./react-apis/memo/MemoParent";
 
 function App() {
   return (
@@ -65,6 +69,10 @@ function App() {
             element={<WithoutTransition />}
           />
           <Route path="/with-use-transition" element={<WithTransition />} />
+          <Route path="/context-books-app" element={<BooksApp />} />
+          <Route path="/foward-ref-exp" element={<ForwareRefComp />} />
+          <Route path="/lazy-loading" element={<LazyComponent />} />
+          <Route path="/memo-api-exp" element={<MemoParent />} />
         </Routes>
       </div>
     </BrowserRouter>
