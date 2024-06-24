@@ -27,6 +27,8 @@ import BooksApp from "./useContext/books-context/components/BooksApp";
 import { ParentComponent as ForwareRefComp } from "./react-apis/forwardRef/ParentComponent";
 import LazyComponent from "./react-apis/lazy/LazyComponent";
 import MemoParent from "./react-apis/memo/MemoParent";
+import CounterParent from "./useState/counter/CounterParent";
+import { CounterParent as ContextParent} from "./useContext/counter-context/CounterParent"
 
 function App() {
   return (
@@ -73,6 +75,8 @@ function App() {
           <Route path="/foward-ref-exp" element={<ForwareRefComp />} />
           <Route path="/lazy-loading" element={<LazyComponent />} />
           <Route path="/memo-api-exp" element={<MemoParent />} />
+          <Route path="/use-state-counter" element={<CounterParent />} />
+          <Route path="/use-context-counter" element={<ContextParent />} />
         </Routes>
       </div>
     </BrowserRouter>
