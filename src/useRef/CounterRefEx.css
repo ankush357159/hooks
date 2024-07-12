@@ -1,0 +1,11 @@
+.button-ref {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-ref:hover {
+  background-color: #005cbf;
+}

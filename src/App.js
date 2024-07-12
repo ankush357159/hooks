@@ -28,7 +28,11 @@ import { ParentComponent as ForwareRefComp } from "./react-apis/forwardRef/Paren
 import LazyComponent from "./react-apis/lazy/LazyComponent";
 import MemoParent from "./react-apis/memo/MemoParent";
 import CounterParent from "./useState/counter/CounterParent";
-import { CounterParent as ContextParent} from "./useContext/counter-context/CounterParent"
+import { CounterParent as ContextParent } from "./useContext/counter-context/CounterParent";
+import CounterRefEx from "./useRef/CounterRefEx";
+import Test from "./test/Test";
+import Counter from "./components/Counter";
+import ThunkData from "./components/ThunkData";
 
 function App() {
   return (
@@ -77,6 +81,10 @@ function App() {
           <Route path="/memo-api-exp" element={<MemoParent />} />
           <Route path="/use-state-counter" element={<CounterParent />} />
           <Route path="/use-context-counter" element={<ContextParent />} />
+          <Route path="/use-counter-ref-ex" element={<CounterRefEx />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="/toolkit-counter" element={<Counter />} />
+          <Route path="/toolkit-thunk" element={<ThunkData />} />
         </Routes>
       </div>
     </BrowserRouter>
